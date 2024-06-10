@@ -1,0 +1,40 @@
+﻿@model List<MyMovies.DATA.Movie>
+
+<h2>My Movies List</h2>
+
+<button class="btn btn-success">Add</button>
+
+<table class="table table-hover table-bordered" style="width:100%">
+
+    <thead>
+        <tr>
+            <td style="width:14%">Id</td>
+            <td style="width:14%">Name</td>
+            <td style="width:14%">Release Date</td>
+            <td style="width:14%">Category</td>
+            <td style="width:14%">Movie Language</td>
+            <td style="width:14%">Number In Stock</td>
+            <td style="width:16%"></td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.MovieID</td>
+                <td>@movie.Name</td>
+                <td>@movie.ReleaseDate</td>
+                <td>@movie.Category</td>
+                <td>@movie.Language</td>
+                <td>@movie.NumbeInStock</td>
+                <td>
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>
