@@ -1,8 +1,12 @@
-﻿@model List<MyMovies.DATA.Movie>
+﻿@model List<MyMovies.Data.Movie>
+
+@{
+    ViewBag.Title = "Movie List";
+}
 
 <h2>My Movies List</h2>
 
-<button class="btn btn-success">Add</button>
+@Html.ActionLink("Add Movie", "Create", "Movie", new { @class = "btn btn-success" })
 
 <table class="table table-hover table-bordered" style="width:100%">
 
@@ -28,9 +32,13 @@
                 <td>@movie.Category</td>
                 <td>@movie.Language</td>
                 <td>@movie.NumbeInStock</td>
+
                 <td>
-                    <button class="btn btn-primary">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
+
+                    @Html.ActionLink("Edit Movie", "Edit", "Movie", new { id = movie.MovieID }, new { @class = "btn btn-primary" })
+
+                    @Html.ActionLink("Delete Movie", "Delete", "Movie", new { id = movie.MovieID }, new { @class = "btn btn-danger" })
+
                 </td>
 
             </tr>

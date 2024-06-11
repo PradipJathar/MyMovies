@@ -130,20 +130,20 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
-    <Compile Include="DATA\Movie.cs">
+    <Compile Include="Data\Movie.cs">
       <DependentUpon>MyMoviesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA\MyMoviesModel.Context.cs">
+    <Compile Include="Data\MyMoviesModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyMoviesModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA\MyMoviesModel.cs">
+    <Compile Include="Data\MyMoviesModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyMoviesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DATA\MyMoviesModel.Designer.cs">
+    <Compile Include="Data\MyMoviesModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyMoviesModel.edmx</DependentUpon>
@@ -158,12 +158,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="DATA\MyMoviesModel.Context.tt">
+    <Content Include="Data\MyMoviesModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MyMoviesModel.Context.cs</LastGenOutput>
       <DependentUpon>MyMoviesModel.edmx</DependentUpon>
     </Content>
-    <Content Include="DATA\MyMoviesModel.tt">
+    <Content Include="Data\MyMoviesModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MyMoviesModel.edmx</DependentUpon>
       <LastGenOutput>MyMoviesModel.cs</LastGenOutput>
@@ -174,11 +174,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="DATA\MyMoviesModel.edmx">
+    <EntityDeploy Include="Data\MyMoviesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MyMoviesModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="DATA\MyMoviesModel.edmx.diagram">
+    <Content Include="Data\MyMoviesModel.edmx.diagram">
       <DependentUpon>MyMoviesModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -206,6 +206,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Movie\Create.cshtml" />
+    <Content Include="Views\Movie\Edit.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

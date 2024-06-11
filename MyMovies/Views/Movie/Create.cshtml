@@ -1,0 +1,74 @@
+﻿@model MyMovies.Data.Movie
+
+@{
+    ViewBag.Title = "Create Movie";
+}
+
+<h2>Create Movie</h2>
+
+@using (Html.BeginForm("Create", "Movie", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.Name, new { @class = "md-4 control-label" })
+
+        <div class="md-8">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.ReleaseDate, new { @class = "md-4 control-label" })
+
+        <div class="md-8">
+            @Html.TextBoxFor(m => m.ReleaseDate, new { @class = "form-control" })
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.Category, new { @class = "md-4 control-label" })
+
+        <div class="md-8">
+            @Html.TextBoxFor(m => m.Category, new { @class = "form-control" })
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.Language, new { @class = "md-4 control-label" })
+
+        <div class="md-8">
+            @Html.TextBoxFor(m => m.Language, new { @class = "form-control" })
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.NumbeInStock, new { @class = "md-4 control-label" })
+
+        <div class="md-8">
+            @Html.TextBoxFor(m => m.NumbeInStock, new { @class = "form-control" })
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+
+        <button type="submit" class="btn btn-success">Submit</button>
+
+    </div> 
+
+}
+

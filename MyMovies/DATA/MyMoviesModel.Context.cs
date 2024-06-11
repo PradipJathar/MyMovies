@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMovies.DATA
+namespace MyMovies.Data
 {
     using System;
     using System.Data.Entity;
@@ -25,6 +25,6 @@ namespace MyMovies.DATA
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Movie> Movies { get; set; }
+        public virtual DbSet<Movie> Movie { get; set; }
     }
 }

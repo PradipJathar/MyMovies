@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMovies.DATA
+namespace MyMovies.Data
 {
     using System;
     using System.Collections.Generic;
